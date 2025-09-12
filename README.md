@@ -1,73 +1,71 @@
-# Welcome to your Lovable project
+# 🌐 Asive Khenqa — Portfolio
 
-## Project info
+Welcome to my professional portfolio!  
+This website showcases my journey as an **IT Support Specialist** and my growing expertise in **Artificial Intelligence and Machine Learning**.  
+It is built with **HTML, CSS, and JavaScript** and hosted on **GitHub Pages**.
 
-**URL**: https://lovable.dev/projects/44dbba1c-928a-4603-8338-12fbc185da57
+---
 
-## How can I edit this code?
+## 🔹 Sections
 
-There are several ways of editing your application.
+### 🏠 Home
+- Introductory text
+- Quick access hero cards: **Download Resume** & **Contact**
 
-**Use Lovable**
+### 👨‍💻 About Me
+- Career summary
+- Work experience:
+  - Capaciti (IT Support)
+  - Department of Education (ICT Trainee)
+  - Ingomso Tech Solutions (Technical Support Trainee)
+- Education (Matric, Marketing Management, IT Technical Support)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/44dbba1c-928a-4603-8338-12fbc185da57) and start prompting.
+### 🚀 Featured Projects
+1. **AI Resume Builder**  
+   [GitHub](https://github.com/Asive-khenqa/AI-Resume-Builder.git) | [Live Demo](https://ats-friendly-forge.lovable.app/)  
+   *AI-powered resume builder with dynamic templates.*
 
-Changes made via Lovable will be committed automatically to this repo.
+2. **Custom Content Generator**  
+   [GitHub](https://github.com/Asive-khenqa/Marketing-Copy-Generator-Tool.git) | [Live Demo](https://cloud.flowiseai.com/chatbot/2bbe8e94-5942-4594-bd6f-a31139081901)  
+   *Generates personalized text content for blogs, bios, and more.*
 
-**Use your preferred IDE**
+3. **End-to-End AI Solution**  
+   [GitHub](https://github.com/mooncakeSG/AI-Based-Task-TT-.git) | [Live Demo](https://intelliassist-ai-web-2025.fly.dev/)  
+   *Complete AI pipeline from data collection to deployment.*
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### 🛠 Technical Skills
+- **IT Support & Hardware:** Setup, configuration, troubleshooting, Microsoft Office  
+- **Programming & AI Foundations:** Python, AI concepts, Generative AI basics  
+- **Core Competencies:** Problem-solving, Collaboration, Critical Thinking, Adaptability  
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### 🎯 Objective
+Seeking challenging opportunities to apply my skills and contribute to organizational success.
 
-Follow these steps:
+### 🎓 Education
+- Jongilanga Senior Secondary School — Matric (2018)  
+- Port Elizabeth College (Russell Road) — Marketing Management N4–N6 (In Progress)  
+- NQF Level 4 Certificate — IT Technical Support  
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### 📬 Contact
+- **Email:** asivekhenqa@gmail.com  
+- **GitHub:** [Asive-khenqa](https://github.com/Asive-khenqa)  
+- **LinkedIn:** *(add your link here)*  
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## ⚡ Features
+- Smooth **scroll animations** with fade-in effects  
+- Responsive design for desktop and mobile  
+- Downloadable **resume PDF**  
+- Project showcase with images, GitHub links, and live demos  
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+---
 
-**Edit a file directly in GitHub**
+## 🚀 Deployment Instructions (GitHub Pages)
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+You can run this portfolio locally or publish it live on **GitHub Pages**.
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/44dbba1c-928a-4603-8338-12fbc185da57) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+### ▶️ Local Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Asive-khenqa/asive-khenqa-portfolio.git
