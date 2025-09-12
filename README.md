@@ -1,6 +1,6 @@
 # 🌐 Asive Khenqa — Portfolio
 
-Welcome to my professional portfolio!  
+Asive Khenqa`s professional portfolio!  
 This website showcases my journey as an **IT Support Specialist** and my growing expertise in **Artificial Intelligence and Machine Learning**.  
 It is built with **HTML, CSS, and JavaScript** and hosted on **GitHub Pages**.
 
