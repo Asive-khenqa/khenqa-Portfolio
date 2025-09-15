@@ -11,6 +11,51 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Responsive images */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .projects-grid, .certifications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        .project-card, .cert-card, .cv-card {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #fff;
+            transition: transform 0.2s;
+        }
+        .project-card:hover, .cert-card:hover, .cv-card:hover {
+            transform: translateY(-5px);
+        }
+        .education-logo, .cert-logo {
+            max-width: 50px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .hero-cards {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        @media(max-width: 768px) {
+            .hero-cards {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+        iframe.cv-preview {
+            width: 100%;
+            height: 600px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
     <header class="header">
@@ -21,6 +66,7 @@
             <a href="#projects">Projects</a>
             <a href="#skills">Skills</a>
             <a href="#certifications">Certifications</a>
+            <a href="#cv">CV</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -38,9 +84,9 @@
                 </div>
 
                 <div class="hero-cards">
-                    <a href="resume.pdf" class="card" download>
+                    <a href="Asive Khenqa_CV.pdf" class="card" download>
                         <i class="fa-solid fa-file-arrow-down"></i>
-                        <h3>Download Resume</h3>
+                        <h3>Download CV</h3>
                         <p>Get my full CV in PDF format.</p>
                     </a>
                     <a href="#contact" class="card">
@@ -129,7 +175,13 @@
             </div>
         </section>
 
-        <!-- Skills, Certifications, Contact sections remain unchanged -->
+        <section id="cv" class="content-section">
+            <h2><i class="fa-solid fa-file-lines"></i> CV Preview</h2>
+            <div class="cv-card" style="padding:1rem;">
+                <iframe class="cv-preview" src="Asive Khenqa_CV.pdf"></iframe>
+                <p style="margin-top:0.5rem;">Click <a href="Asive Khenqa_CV.pdf" download>here</a> to download the full CV.</p>
+            </div>
+        </section>
 
     </main>
 
@@ -140,3 +192,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
