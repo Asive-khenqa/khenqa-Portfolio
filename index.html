@@ -4,192 +4,178 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asive Khenqa | IT & AI Portfolio</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Responsive images */
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-        .projects-grid, .certifications-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-        }
-        .project-card, .cert-card, .cv-card {
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            border-radius: 8px;
-            overflow: hidden;
-            background-color: #fff;
-            transition: transform 0.2s;
-        }
-        .project-card:hover, .cert-card:hover, .cv-card:hover {
-            transform: translateY(-5px);
-        }
-        .education-logo, .cert-logo {
-            max-width: 50px;
-            margin-right: 10px;
-            vertical-align: middle;
-        }
-        .hero-cards {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-        @media(max-width: 768px) {
-            .hero-cards {
-                flex-direction: column;
-                gap: 1rem;
-            }
-        }
-        iframe.cv-preview {
-            width: 100%;
-            height: 600px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-        }
+        body {font-family: 'Poppins', sans-serif; margin:0; padding:0; box-sizing:border-box; background:#f9f9f9;}
+        header {background:#1f1f1f; color:#fff; padding:1rem 2rem; display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; z-index:1000;}
+        header nav a {color:#fff; margin-left:1rem; text-decoration:none; font-weight:600;}
+        header nav a:hover {color:#00bfff;}
+        section {padding:3rem 2rem;}
+        h2 {margin-bottom:1rem; color:#1f1f1f;}
+        h3 {margin-top:1rem; color:#333;}
+        .hero {text-align:center; padding:5rem 2rem; background:#e6f7ff;}
+        .hero h1 {font-size:2.5rem; margin-bottom:0.5rem;}
+        .hero .subtitle {font-size:1.2rem; color:#555;}
+        .hero .description {font-size:1rem; color:#333; margin:1rem 0 2rem 0; line-height:1.5;}
+        .hero-buttons a {padding:0.7rem 1.5rem; margin:0 0.5rem; text-decoration:none; border-radius:5px; font-weight:600;}
+        .btn-primary {background:#00bfff; color:#fff;}
+        .btn-secondary {background:#1f1f1f; color:#fff;}
+        .hero-cards {display:flex; justify-content:center; flex-wrap:wrap; gap:1rem; margin-top:2rem;}
+        .hero-card {display:flex; align-items:center; background:#fff; padding:1rem; border-radius:8px; text-decoration:none; color:#333; box-shadow:0 4px 8px rgba(0,0,0,0.1); transition:transform 0.2s;}
+        .hero-card:hover {transform:translateY(-5px);}
+        .hero-card i {font-size:2rem; margin-right:1rem; color:#00bfff;}
+        .about-container, .skills-grid, .projects-grid, .certifications-grid, .experience-grid {display:grid; gap:1.5rem;}
+        .about-container {grid-template-columns: repeat(auto-fit, minmax(300px,1fr));}
+        .skills-grid {grid-template-columns: repeat(auto-fit, minmax(250px,1fr));}
+        .projects-grid {grid-template-columns: repeat(auto-fit, minmax(280px,1fr));}
+        .experience-grid {grid-template-columns: repeat(auto-fit, minmax(300px,1fr));}
+        .project-card, .cert-card, .skill-card, .experience-card {background:#fff; border-radius:8px; padding:1rem; box-shadow:0 4px 8px rgba(0,0,0,0.1); transition: transform 0.2s;}
+        .project-card:hover, .cert-card:hover, .skill-card:hover, .experience-card:hover {transform: translateY(-5px);}
+        .project-card img, .cert-card img {max-width:100%; height:auto; border-radius:5px; margin-bottom:0.5rem;}
+        .contact {text-align:center;}
+        .contact a {display:inline-block; margin:0.5rem; padding:0.7rem 1.2rem; background:#00bfff; color:#fff; text-decoration:none; border-radius:5px;}
+        iframe {width:100%; height:600px; border:1px solid #ccc; border-radius:8px; margin-top:1rem;}
+        ul {list-style-type: disc; padding-left:1.2rem;}
     </style>
 </head>
 <body>
-    <header class="header">
-        <a href="#" class="logo">Asive Khenqa</a>
-        <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#certifications">Certifications</a>
-            <a href="#cv">CV</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
 
-    <main>
-        <section id="home" class="home-section">
-            <div class="home-content">
-                <h1>Asive Khenqa</h1>
-                <p class="subtitle">IT Support Specialist | Marketing Management (N4 & N5) | Emerging AI Innovator</p>
-                <p>IT Support Specialist with a growing passion for Artificial Intelligence and Machine Learning.</p>
+<header>
+    <a href="#" class="logo" style="font-weight:700;">Asive Khenqa</a>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#future">Future Learning</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Projects</a>
-                    <a href="#about" class="btn btn-secondary">Learn More About Me</a>
-                </div>
+<!-- HOME / HERO SECTION -->
+<section class="hero" id="home">
+    <div class="container hero-content hero-grid">
+        <div class="hero-text fade-in">
+            <h1>Asive Khenqa</h1> 
+            <p class="subtitle">IT Support Specialist | Marketing Management (N4 & N5) | Emerging AI Innovator</p>
+            <p class="description">
+                Dedicated IT professional with a foundation in hardware and diagnostics.<br>
+                Now evolving with Generative AI to innovate and automate support.
+            </p>
 
-                <div class="hero-cards">
-                    <a href="Asive Khenqa_CV.pdf" class="card" download>
-                        <i class="fa-solid fa-file-arrow-down"></i>
-                        <h3>Download CV</h3>
-                        <p>Get my full CV in PDF format.</p>
-                    </a>
-                    <a href="#contact" class="card">
-                        <i class="fa-solid fa-envelope"></i>
-                        <h3>Contact Me</h3>
-                        <p>Let's connect and build something great.</p>
-                    </a>
-                </div>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Projects</a>
+                <a href="#about" class="btn btn-secondary">Learn More About Me</a>
             </div>
-        </section>
 
-        <section id="about" class="content-section">
-            <h2><i class="fa-solid fa-user-tie"></i> About Me</h2>
-            <div class="about-container">
-                <div class="about-text">
-                    <h3>Career Summary</h3>
-                    <p>A dedicated IT professional transitioning into AI. Strong problem-solving skills, system configuration, and collaboration experience.</p>
-
-                    <h3>Work Experience</h3>
-                    <ul>
-                        <li><b>IT Support Specialist</b> - Capaciti</li>
-                        <li><b>ICT Trainee</b> - Department of Education</li>
-                        <li><b>Technical Support Trainee</b> - Ingomso Tech Solutions</li>
-                    </ul>
-
-                    <h3>Education</h3>
-                    <ul>
-                        <li><b>IT Technical Support (NQF L4)</b></li>
-                        <li>
-                            <img src="images/Port Elizabeth collage.png" alt="Port Elizabeth College Logo" class="education-logo">
-                            <b>Marketing Management (N4–N6 In Progress)</b> - Port Elizabeth College
-                        </li>
-                        <li>
-                            <img src="images/high school badge.png" alt="Jongilanga SSS Badge" class="education-logo">
-                            <b>Matric</b> - Jongilanga Senior Secondary School (2018)
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="content-section">
-            <h2><i class="fa-solid fa-rocket"></i> Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <img src="images/Resume Builder.PNG" alt="AI Resume Builder Project">
-                    <h3>AI Resume Builder</h3>
-                    <p>An AI-powered application that helps craft professional, ATS-friendly resumes using dynamic templates.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/Asive-khenqa/AI-Resume-Builder.git" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                        <a href="https://ats-friendly-forge.lovable.app/" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
-                        </a>
+            <div class="hero-cards">
+                <a href="SmartResume.pdf" download class="hero-card">
+                    <i class="fas fa-file-arrow-down"></i>
+                    <div>
+                        <h4>Professional Resume</h4>
+                        <p>Download my comprehensive CV</p>
                     </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="images/Content generator.PNG" alt="Custom Content Generator Project">
-                    <h3>Custom Content Generator</h3>
-                    <p>Generates personalized text content for blogs, professional bios, marketing copy, and more using a custom AI model.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/Asive-khenqa/Marketing-Copy-Generator-Tool.git" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                        <a href="https://cloud.flowiseai.com/chatbot/2bbe8e94-5942-4594-bd6f-a31139081901" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
-                        </a>
+                </a>
+                <a href="#contact" class="hero-card">
+                    <i class="fas fa-comments"></i>
+                    <div>
+                        <h4>Let's Connect</h4>
+                        <p>Ready to discuss opportunities</p>
                     </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="images/End-to-End AI Solution.PNG" alt="End-to-End AI Solution Project">
-                    <h3>End-to-End AI Solution</h3>
-                    <p>A complete AI pipeline demonstration, covering everything from data collection and processing to model deployment.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/mooncakeSG/AI-Based-Task-TT-.git" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                        <a href="https://intelliassist-ai-web-2025.fly.dev/" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
-                        </a>
-                    </div>
-                </div>
+                </a>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
 
-        <section id="cv" class="content-section">
-            <h2><i class="fa-solid fa-file-lines"></i> CV Preview</h2>
-            <div class="cv-card" style="padding:1rem;">
-                <iframe class="cv-preview" src="Asive Khenqa_CV.pdf"></iframe>
-                <p style="margin-top:0.5rem;">Click <a href="Asive Khenqa_CV.pdf" download>here</a> to download the full CV.</p>
-            </div>
-        </section>
+<!-- ABOUT ME -->
+<section id="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+        <div>
+            <p>I’m an IT Support Specialist with hands-on experience in hardware/software troubleshooting, Windows OS, and Microsoft Office. Currently working at Capaciti, I’m also pursuing further education in Artificial Intelligence and Machine Learning.</p>
+            <h3>Preview My CV</h3>
+            <iframe src="SmartResume.pdf"></iframe>
+        </div>
+    </div>
+</section>
 
-    </main>
+<!-- TECHNICAL SKILLS -->
+<section id="skills">
+    <h2>Technical Skills & Expertise</h2>
+    <div class="skills-grid">
+        <div class="skill-card">
+            <h3>IT Support & Hardware</h3>
+            <ul>
+                <li>Desktop and laptop setup & configuration</li>
+                <li>Hardware assembly and component upgrades</li>
+                <li>Computer diagnostics and troubleshooting</li>
+                <li>Printer and peripheral device support</li>
+                <li>Microsoft Office Suite (Word, Excel, PowerPoint)</li>
+                <li>Basic use of GitHub</li>
+                <li>Streamlit (for simple AI/ML app demos)</li>
+            </ul>
+        </div>
+        <div class="skill-card">
+            <h3>Programming & AI Foundations</h3>
+            <ul>
+                <li>Python (beginner level)</li>
+                <li>Understanding of AI concepts and use cases</li>
+                <li>Basics of generative AI and large language models</li>
+                <li>Familiarity with ethical AI practices (Responsible AI)</li>
+                <li>Intro to data handling and logic in AI development</li>
+                <li>Ability to work under pressure and meet deadlines</li>
+                <li>Capable of working with limited supervision</li>
+                <li>Willingness to accept responsibility</li>
+            </ul>
+        </div>
+    </div>
+</section>
 
-    <footer>
-        <p>&copy; 2025 Asive Khenqa. All Rights Reserved.</p>
-    </footer>
+<!-- PROFESSIONAL EXPERIENCE & EDUCATION -->
+<section id="experience">
+    <h2>Professional Experience & Education</h2>
+    <div class="experience-grid">
+        <div class="experience-card">
+            <h3>ICT Technician Trainee (2023)</h3>
+            <ul>
+                <li>Installed operating systems on new desktop computers</li>
+                <li>Updated software and installed hardware components</li>
+                <li>Provided IT support in an educational environment</li>
+                <li>Assisted with troubleshooting and resolving user issues</li>
+            </ul>
+        </div>
+        <div class="experience-card">
+            <h3>Technical Support Learnership (2022–2023)</h3>
+            <ul>
+                <li>Participated in practical IT support program</li>
+                <li>Gained experience with desktop troubleshooting, diagnostics, and setup</li>
+                <li>Installed software and performed basic hardware maintenance</li>
+                <li>Supported end-users under supervision</li>
+            </ul>
+        </div>
+        <div class="experience-card">
+            <h3>Grade 12 (Matric) — Jongilanga Senior Secondary School, 2018</h3>
+            <p>Focused on Mathematics, Physical Sciences, and Life Sciences, building strong analytical and technical foundation.</p>
+        </div>
+        <div class="experience-card">
+            <h3>Certificate in Marketing Management (N4 & N5) — 2021</h3>
+            <p>Russell Road Campus, Port Elizabeth College — Gained knowledge in business, communication, and management, enhancing technical and interpersonal skills.</p>
+        </div>
+    </div>
+</section>
 
-    <script src="script.js"></script>
+<!-- Projects, Certifications, Future Learning, Contact sections can be added below in similar format -->
+
+<footer style="text-align:center; padding:1rem; background:#1f1f1f; color:#fff;">
+    &copy; 2025 Asive Khenqa. All Rights Reserved.
+</footer>
+
 </body>
 </html>
+
 
