@@ -21,15 +21,18 @@ It is built with **HTML, CSS, and JavaScript** and hosted on **GitHub Pages**.
 - Education (Matric, Marketing Management, IT Technical Support)
 
 ### 🚀 Featured Projects
-1. **AI Resume Builder**  
+1.### AI Resume Builder
+![Resume Builder](images/Resume Builder.PNG)   
    [GitHub](https://github.com/Asive-khenqa/AI-Resume-Builder.git) | [Live Demo](https://ats-friendly-forge.lovable.app/)  
    *AI-powered resume builder with dynamic templates.*
 
-2. **Custom Content Generator**  
+2. **Custom Content Generator**
+   ![Content Generator](images/Content generator.PNG)   
    [GitHub](https://github.com/Asive-khenqa/Marketing-Copy-Generator-Tool.git) | [Live Demo](https://cloud.flowiseai.com/chatbot/2bbe8e94-5942-4594-bd6f-a31139081901)  
    *Generates personalized text content for blogs, bios, and more.*
 
-3. **End-to-End AI Solution**  
+3. **End-to-End AI Solution**
+   ![End-to-End AI Solution](images/End-to-End AI Solution.PNG)   
    [GitHub](https://github.com/mooncakeSG/AI-Based-Task-TT-.git) | [Live Demo](https://intelliassist-ai-web-2025.fly.dev/)  
    *Complete AI pipeline from data collection to deployment.*
 
@@ -44,8 +47,12 @@ Seeking challenging opportunities to apply my skills and contribute to organizat
 ### 🎓 Education
 - Jongilanga Senior Secondary School — Matric (2018)  
 - Port Elizabeth College (Russell Road) — Marketing Management N4–N6 (In Progress)  
-- NQF Level 4 Certificate — IT Technical Support  
-
+- NQF Level 4 Certificate — IT Technical Support
+## Certifications
+- Google Cloud: Introduction to Generative AI  
+- DeepLearning.AI: Generative AI for Everyone  
+- LinkedIn Learning: What is Generative AI?  
+- IBM: Introduction to Artificial Intelligence (AI)
 ### 📬 Contact
 - **Email:** asivekhenqa@gmail.com  
 - **GitHub:** [Asive-khenqa](https://github.com/Asive-khenqa)  
