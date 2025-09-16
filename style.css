@@ -1,7 +1,7 @@
 /* General Body Styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #0d1117;
+    background-color: #0b1d4d; /* Dark Blue Background */
     color: #e6edf3;
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@ h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 40px;
-    color: #58a6ff;
+    color: #79b8ff; /* Lighter Blue for Contrast */
 }
 
 /* Projects Grid */
@@ -25,7 +25,7 @@ h2 {
 
 /* Project Card Styles */
 .project-card {
-    background-color: #161b22;
+    background-color: #13296b; /* Slightly Lighter Dark Blue */
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -52,7 +52,7 @@ h2 {
 .project-card h3 {
     font-size: 1.5rem;
     margin: 15px 20px 10px 20px;
-    color: #58a6ff;
+    color: #79b8ff;
 }
 
 /* Project Description */
@@ -69,17 +69,17 @@ h2 {
     display: inline-block;
     margin: 10px 10px 20px 20px;
     padding: 8px 15px;
-    background-color: #21262d;
-    color: #58a6ff;
+    background-color: #0b1d4d; /* Match Body Background */
+    color: #79b8ff;
     text-decoration: none;
     border-radius: 6px;
     font-weight: bold;
-    transition: background 0.3s, transform 0.3s;
+    transition: background 0.3s, transform 0.3s, color 0.3s;
 }
 
 .project-card div a:hover {
-    background-color: #58a6ff;
-    color: #0d1117;
+    background-color: #79b8ff;
+    color: #0b1d4d;
     transform: scale(1.05);
 }
 
